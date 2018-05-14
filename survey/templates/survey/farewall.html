@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+    {% load crispy_forms_tags %}
+    
+      
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Gonzalo Avilez">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Farewall</title>
+   
+    {% block styles %}
+    {% endblock styles %}
+
+       
+</head>
+
+<body>
+{% block container %}
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Gracias por tu opinion. 
+        Seguimos mejorando nuestro servicio</h1>
+         <a href="{% url 'questions' %}" > <button class="btn btn-success " >Aceptar
+        </button>
+        </a>
+
+    </div><!-- /.container -->
+{% endblock container %}
+
+
+
+
+      
+    {% block scripts %}
+    {% endblock scripts %}
+</body>
+</html>
